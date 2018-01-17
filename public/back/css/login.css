@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+
+html , body{
+    height: 100%;
+}
+.body_bg{
+    background-color: #222d32;
+}
+.container{
+    background-color: #222d32;
+}
+
+.panel{
+    margin-top: 150px ;
+}
+.header{
+    background-color: #337ab7;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.header h4{
+    font-size: 19px;
+    display: inline-block;
+    font-weight: 600;
+}
+.bottom > form{
+    padding: 10px;
+
+    padding-bottom: 20px;
+}
+.bottom > form > .reset{
+    float: left;
+
+}
+.bottom > form > .login{
+    float: right;
+    color: #ffffff;
+    background-color: #337ab7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

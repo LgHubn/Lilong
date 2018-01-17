@@ -1,0 +1,75 @@
+@charset"UTF-8";
+
+/*左边nav*/
+.lt_middle_left{
+    float: left;
+    position: relative;
+    height: 100%;
+    width: 90px;
+    /*background-color: green;*/
+}
+.scroll_lt li a{
+    width: 90px;
+    height: 50px;
+    display: block;
+    background-color: pink;
+    border-right: 1px solid red;
+    border-bottom:1px solid red;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    color: cadetblue;
+}
+
+.lt_middle .scroll_lt li a.now{
+    background-color: white;
+    border: none;
+}
+
+/*右边的信息---------------------------------------------*/
+.lt_middle_right{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+
+.lt_middle_right li{
+    width: 33.3%;
+    float: left;
+}
+.scroll_rt li img{
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+}
+.scroll_rt li p {
+    text-align: center;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

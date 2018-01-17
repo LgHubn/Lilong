@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数字对象</title>
+</head>
+<body>
+
+</body>
+    <script>
+        var num = 1.222;
+        var num2 = 1.2555;
+        var num3 = 2.222;
+        var num4 = 2.555;
+        //向上取整数
+        //向上取整数即为 Math.ceil
+        console.log(Math.ceil(num));//输出为2 //Math.ceil 为不管小数位有多少 都是向上进一
+        console.log(Math.ceil(num2));//输出的结果依然是二
+        console.log(Math.floor(num3));//输出为3 Math.floor 向下取整
+        console.log(Math.floor(num4));//输出为3 Math.floor 向下取整即为不管小数点后 有多大 都是向上进一
+        //四舍五入
+        console.log(Math.round(num));
+        console.log(Math.round(num2));//四舍五入
+
+        console.log(Math.random());//取0~1之间的随机数并且取不到一,而且有多位小数 需要结合取整操作来取到某个区间的随机整数
+        //示例
+        console.log(Math.ceil(Math.random() * 10));//这样即为可以获取到1~10之间的一个随机数并且可以去到10;
+        //注意这里不能用向下取整
+
+
+    </script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

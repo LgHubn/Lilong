@@ -1,0 +1,51 @@
+@charset"UTF-8";
+
+.lt_content{
+    padding: 20px;
+
+}
+.modal-content{
+    padding: 20px;
+}
+.update_img label{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.update_img input{
+    display: none;
+}
+.img_box img{
+    width: 150px;
+    height: 180px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

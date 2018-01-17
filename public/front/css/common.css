@@ -1,0 +1,173 @@
+@charset"UTF-8";
+
+body,html{
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration:none;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.lt_container{
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    /*background-color: pink;*/
+}
+
+/*头部*/
+.lt_header{
+    width: 100%;
+    height: 45px;
+    background-color: #069;
+    position: absolute;
+    top: 0;
+}
+.icon_left a,
+.icon_right a{
+    width: 45px;
+    height: 45px;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    display: block;
+    font-size: 18px;
+}
+.icon_left{
+    float: left;
+}
+.icon_right{
+    float: right;
+}
+.lt_header_middle{
+    margin: 0 45px;
+    height: 45px;
+}
+.lt_header_middle h4{
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin: 0;
+}
+/**/
+.lt_middle{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*公共的底部*/
+.lt_bottom{
+    width: 100%;
+    height: 55px;
+    background-color: #069;
+    position: absolute;
+    bottom: 0;
+}
+.lt_bottom li  {
+    width: 25%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    padding-top: 8px;
+    color: white;
+}
+.lt_bottom li a{
+    color: white;
+}
+.lt_bottom  p{
+    margin: 0;
+    color: white;
+}
+.lt_bottom ul li.active span,
+.lt_bottom ul li.active p{
+    color: yellow;
+}
+
+/*公共商品部分样式--------------------------------*/
+
+.lt_product{
+    padding: 10px;
+    width: 100%;
+}
+.lt_product a{
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: block;
+    float: left;
+    text-align: center;
+}
+.lt_product a:nth-child(odd){
+    margin-right: 4%;
+}
+
+.lt_product p span:nth-child(1){
+    color: red;
+}
+.lt_product p span:nth-child(2){
+    color:#8f8f94;
+    text-decoration: line-through;
+}
+
+.pdg{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/*主体的搜索框-------------------------------*/
+.lt_search{
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.lt_search input{
+    background-color: white;
+    border:1px solid #007aff;
+    margin: 0;
+    text-align: left;
+}
+.lt_search .search_btn{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
