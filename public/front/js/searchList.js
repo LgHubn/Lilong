@@ -7,7 +7,7 @@
 
     //1.获取到传来的数据
     var searchData = getSearchObj();
-    console.log(getSearchObj());
+    //console.log(getSearchObj());
     //2.将数据复制给当前页面的input框
     $('.lt_search input').val(searchData.key);
     //3.根据此数据渲染初始页面
@@ -21,6 +21,20 @@
         param.page = 1;
         param.pageSize = 100;
         param.proName = $(".lt_search input").val();
+
+        //1.2判断是否要排序
+        //声明变量来确定是否有nwe这个类名
+        //有的话就是需要排序没有的话就是不需要排序
+        var $sort = $('.lt_sort a.new');
+        //console.log($sort);
+        if($sort.length > 0){
+            //说明需要排序
+            //获取到 需要排序的是num还是price
+            var type = $sort.data("type");
+            var value = $sort.find('span').hasClass('fa-angle-down')?2:1;
+            //将此数据添加到变量param
+            param[type] = value;
+        }
         //2.发送ajax请求
         $.ajax({
             type:'get',
@@ -28,7 +42,7 @@
             data:param,
             success:function(info){
                 //渲染数据
-                console.log(info);
+                //console.log(info);
                 $('.lt_product').html(template('tpl_list',info))
             }
         })
@@ -52,6 +66,7 @@
             //让所有的箭头都向下
             $(".lt_sort span").removeClass("fa-angle-up").addClass("fa-angle-down");
         }
+        render();
     })
 
 

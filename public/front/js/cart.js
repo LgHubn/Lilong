@@ -24,7 +24,7 @@ $(function(){
                 auto: true,//可选,默认false.首次加载自动上拉刷新一次
                 //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
                 callback :function() {
-                    console.log('呵呵');
+                    //console.log('呵呵');
 
                     //初始化渲染页面
                     $.ajax({
@@ -112,17 +112,23 @@ $(function(){
 
     })
     
-    //4.计算价格
+    //4.计算价格--完成
     //给所有的ck注册点击事件
-    $('OA_task_2').on('change','ck',function(){
-        var total = [];
-        $('.ck:checked');
+    $('#OA_task_2').on('change','.ck',function(){
+        console.log('呵呵');
+        var total = 0;
+        $('.ck:checked').each(function(){
+            //获取到先在的价格和已选的数量来计算总的价格
+            // 存放入total中 ;
+            var price = $(this).data('price');
+            var num = $(this).data('num');
+            total += price * num;
 
-
-
-
-
-        $('.lt_total span').text(total)
+        });
+        //将计算后的总价格更新到
+        //订单总金额中
+        //这里需要保存两位小数
+        $('.lt_total span').text(total.toFixed(2));
     })
 
 
