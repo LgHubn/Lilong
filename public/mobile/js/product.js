@@ -8,6 +8,7 @@ $(function () {
   //3. 结合模版引擎渲染
 
   var productId = tools.getSearch("productId");
+  console.log(productId);
 
   $.ajax({
     type:"get",
